@@ -1,0 +1,30 @@
+$primary-color: #000000;
+$secondary-color: #777fff;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}

@@ -1,0 +1,47 @@
+.supported-lang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+
+  &__text {
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 45px;
+        border-bottom: solid 4px $secondary-color;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .card {
+      padding: 1.5rem 1.3rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      margin: 1rem 0.7rem;
+      transition: ease-in-out 0.2s;
+
+      h3 {
+        margin-bottom: 0.7rem;
+      }
+
+      &:hover {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}

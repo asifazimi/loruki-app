@@ -1,0 +1,49 @@
+.countdown {
+  width: 100%;
+  height: auto;
+  padding: 0 5rem;
+  text-align: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::after {
+      content: "";
+      width: 40px;
+      border-bottom: solid 5px $secondary-color;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 0.8rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2rem 0;
+
+    .day,
+    .hour,
+    .minute,
+    .second {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      padding: 2px;
+    }
+  }
+}

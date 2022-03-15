@@ -1,0 +1,80 @@
+.footer {
+  width: 100%;
+  background-color: #002240;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 7rem;
+  color: #fff;
+
+  &__info {
+    line-height: 2.6rem;
+
+    h1 {
+      font-weight: normal;
+    }
+  }
+
+  .menu {
+    .nav-links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      list-style: none;
+
+      .nav-link {
+        margin: 0 1rem;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+      transition: ease-in-out 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      background-color: #fff;
+      width: 32px;
+      height: 32px;
+      text-decoration: none;
+      padding: 1.2rem;
+
+      i {
+        color: #002240;
+        font-size: 1.8rem;
+        margin: 0 2px;
+      }
+    }
+
+    a + a {
+      margin-left: 1rem;
+    }
+
+    .ri-twitter-fill:hover {
+      color: #1c9ff0;
+    }
+
+    .ri-facebook-fill:hover {
+      color: #0a80e2;
+    }
+
+    .ri-instagram-fill:hover {
+      color: #b32e87;
+    }
+
+    .ri-linkedin-box-fill:hover {
+      color: #00517c;
+    }
+  }
+}

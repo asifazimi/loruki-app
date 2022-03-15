@@ -1,0 +1,25 @@
+@import "./config";
+@import "./hero";
+@import "./header";
+@import "./media";
+@import "./animations";
+@import "./countdown";
+@import "./services";
+@import "./hosting-service";
+@import "./team";
+@import "./clients";
+@import "./languages";
+@import "./footer";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}

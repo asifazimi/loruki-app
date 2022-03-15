@@ -1,0 +1,117 @@
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  to {
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes openTop {
+  0% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(90deg);
+  }
+}
+
+@keyframes closedTop {
+  0% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(90deg);
+  }
+}
+
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes closedMid {
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes openBot {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes closedBot {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes man-bike {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes hat {
+  from {
+    transform: translateY(0%) rotateZ(0deg);
+  }
+
+  to {
+    transform: translateY(40%) rotateZ(10deg);
+  }
+}

@@ -1,0 +1,69 @@
+.hero {
+  position: relative;
+  max-width: 1100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4vw;
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 1.2rem 0;
+      line-height: 1.5rem;
+    }
+
+    .btn-read {
+      display: inline-block;
+      width: 9rem;
+      padding: 0.8rem 1.2rem;
+      border: 2px solid $secondary-color;
+      border-radius: 0.5rem;
+      background-color: $secondary-color;
+      transition: background-color 0.3s ease;
+
+      a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &__svg {
+    width: 50%;
+    display: flex;
+    justify-content: cetner;
+    align-items: center;
+    padding: 0 1vw;
+
+    #right-wheel,
+    #left-wheel {
+      animation: wheel 2s linear infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    #man-bike {
+      animation: man-bike 1s ease-in-out infinite alternate;
+      transform-origin: bottom;
+    }
+
+    #hat {
+      animation: hat 1s ease-in-out infinite alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+  }
+}

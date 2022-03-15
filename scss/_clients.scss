@@ -1,0 +1,18 @@
+.clients {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 1.5rem 0;
+  margin: 3rem 0;
+
+  .client img {
+    color: #fff;
+    width: 100px;
+    margin: 5px;
+  }
+}

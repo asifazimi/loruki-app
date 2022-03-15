@@ -1,0 +1,119 @@
+.team {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 3vw;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    text-align: center;
+
+    &::after {
+      content: "";
+      width: 40px;
+      border-bottom: solid 5px $secondary-color;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 0.8rem;
+    }
+  }
+
+  &__card {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+
+    .team-image img {
+      overflow: hidden;
+      width: 140px;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    .team-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      padding: 0 1.8rem;
+
+      h3 {
+        color: #072a49;
+        margin-bottom: 8px;
+        font-size: 1.2em;
+      }
+
+      h4 {
+        font-weight: normal;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 45px;
+          border-bottom: solid 1.5px rgba(119, 116, 116, 0.3);
+          margin: 10px 0;
+        }
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .social-links {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        a {
+          transition: ease-in-out 0.3s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          width: 32px;
+          height: 32px;
+          background: #364958;
+          text-decoration: none;
+
+          i {
+            color: #fff;
+            font-size: 16px;
+            margin: 0 2px;
+          }
+        }
+
+        a + a {
+          margin-left: 8px;
+        }
+
+        a:hover {
+          background-color: #002240;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.main-header {
+  position: fixed;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  width: 100vw;
+  height: 65px;
+  color: #000;
+  @include transition-ease;
+
+  a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+
+    .nav-link {
+      transition: opacity 0.4s ease-in-out,
+        transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      &:nth-of-type(2) {
+        transition-delay: 0.1s;
+      }
+
+      &:nth-of-type(3) {
+        transition-delay: 0.2s;
+      }
+
+      &:nth-of-type(4) {
+        transition-delay: 0.3s;
+      }
+
+      a {
+        margin: 0.2rem;
+        padding: 0.8rem 0.5rem;
+        color: #000;
+      }
+      a:hover {
+        @include transition-ease;
+      }
+    }
+  }
+
+  // Mobile Menu Navbar
+  .menu-icon {
+    position: relative;
+    padding: 26px 10px;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+
+    &__line {
+      display: block;
+      position: absolute;
+      background-color: #000;
+      height: 2px;
+      width: 20px;
+      @include transition-ease;
+      border-radius: 4px;
+      left: 0;
+
+      &::before,
+      &::after {
+        left: 0;
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 4px;
+        background: #000;
+        @include transition-ease;
+      }
+
+      &::before {
+        transform: translateY(-5px);
+      }
+
+      &::after {
+        transform: translateY(5px);
+      }
+    }
+  }
+
+  .menu-btn {
+    position: absolute;
+    top: -100px;
+
+    &:focus ~ .menu-icon {
+      .menu-icon__line {
+        &::before {
+          transform: translateY(-7px);
+        }
+
+        &::after {
+          transform: translateY(7px);
+        }
+      }
+    }
+  }
+
+  &.scrolled {
+    background-color: #002240;
+    height: 55px;
+
+    a {
+      color: #fff;
+    }
+
+    .nav-link {
+      a {
+        color: #fff;
+      }
+    }
+
+    .menu-icon {
+      &__line {
+        background: #fff;
+        &::before,
+        &::after {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
